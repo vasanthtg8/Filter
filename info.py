@@ -54,20 +54,20 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
 VERIFY = bool(environ.get('VERIFY', False))
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'tulinks.online')
-SHORTLINK_API = environ.get('SHORTLINK_API', '1ac80b7837179d796cd814977c317c0321b73f35')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', '')
+SHORTLINK_API = environ.get('SHORTLINK_API', '')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', False))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "5")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 PORT = environ.get("PORT", "8080")
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+q_eAkcnNf3c0MDRl')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/MOVIE_LOVERZZ')
-TUTORIAL = environ.get('TUTORIAL', 'https://t.me/MOVIE_LOVERZZ/66')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+DzSaWIdtYz5jOWQ9')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/MoviesU2')
+TUTORIAL = environ.get('TUTORIAL', 'No tutorial guys')
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
 MSG_ALRT = environ.get('MSG_ALRT', 'Hello My Dear Friends ❤️')
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002134871596'))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/+q_eAkcnNf3c0MDRl')
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-)
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', '')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
 AUTO_FFILTER = is_enabled((environ.get('AUTO_FFILTER', "True")), True)
@@ -102,8 +102,8 @@ else:
     ON_HEROKU = False
 BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
 FQDN = str(getenv('FQDN', BIND_ADRESS)) if not ON_HEROKU or getenv('FQDN') else APP_NAME+'.herokuapp.com'
-URL = "https://movieloverz.onrender.com".format(FQDN) if ON_HEROKU or NO_PORT else \
-    "https://movieloverz.onrender.com/".format(FQDN, PORT)
+URL = "https://Moviesuniverse.onrender.com".format(FQDN) if ON_HEROKU or NO_PORT else \
+    "https://Moviesuniverse.onrender.com/".format(FQDN, PORT)
 SLEEP_THRESHOLD = int(environ.get('SLEEP_THRESHOLD', '60'))
 WORKERS = int(environ.get('WORKERS', '4'))
 SESSION_NAME = str(environ.get('SESSION_NAME', 'LazyBot'))
@@ -118,9 +118,9 @@ else:
     ON_HEROKU = False
 HAS_SSL=bool(getenv('HAS_SSL',False))
 if HAS_SSL:
-    URL = "https://movieloverz.onrender.com/".format(FQDN)
+    URL = "https://moviesuniverse.onrender.com/".format(FQDN)
 else:
-    URL = "https://movieloverz.onrender.com/".format(FQDN)
+    URL = "https://moviesuniberse.onrender.com/".format(FQDN)
 
 
 
