@@ -94,7 +94,7 @@ SEASONS = ["season 1" , "season 2" , "season 3" , "season 4", "season 5" , "seas
 
 # Online Stream and Download
 NO_PORT = bool(environ.get('NO_PORT', False))
-APP_NAME = moviesuniverse
+APP_NAME = none
 if 'DYNO' in environ:
     ON_HEROKU = True
     APP_NAME = environ.get('APP_NAME')
@@ -111,7 +111,7 @@ MULTI_CLIENT = False
 name = str(environ.get('name', 'LazyPrincess'))
 PING_INTERVAL = int(environ.get("PING_INTERVAL", "1200"))  # 20 minutes
 if 'DYNO' in environ:
-    ON_HEROKU = none
+    ON_HEROKU = True
     APP_NAME = str(getenv('APP_NAME'))
 
 else:
