@@ -94,7 +94,7 @@ SEASONS = ["season 1" , "season 2" , "season 3" , "season 4", "season 5" , "seas
 
 # Online Stream and Download
 NO_PORT = bool(environ.get('NO_PORT', False))
-APP_NAME = none
+APP_NAME = None
 if 'DYNO' in environ:
     ON_HEROKU = True
     APP_NAME = environ.get('APP_NAME')
